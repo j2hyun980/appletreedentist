@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사과나무치과병원</title>
+
+  <!--ios에서 숫자를 전화번호로 인식하는 것을 방지-->
+  <meta name="format-detection" content="telephone=no, e-mail=no">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <!--web icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--css-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!--js-->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/common.js"></script>
+</head>
+
+<body>
+  <div id="wrap" class="wrap">
+    <header id="header" class="header">
+      <div class="inner">
+        <h1><a href="index.html"><img src="img/logo_w.png" alt="사과나무치과병원"></a></h1>
+
+        <nav>
+          <div class="depth2_bg"></div>
+
+          <ul class="gnb">
+            <li><a href="#" class="depth1">
+                치과상담
+                <b class="underline"></b>
+              </a>
+              <ol class="depth2">
+                <li><a href="#">치아</a></li>
+                <li><a href="#">잇몸</a></li>
+                <li><a href="#">턱관절</a></li>
+              </ol>
+            </li>
+            <li><a href="#" class="depth1">
+                치과진료
+                <b class="underline"></b>
+              </a>
+              <ol class="depth2">
+                <li><a href="#">임플란트</a></li>
+                <li><a href="#">교정</a></li>
+                <li><a href="#">심미치료</a></li>
+                <li><a href="#">교정치료</a></li>
+              </ol>
+            </li>
+            <li><a href="#" class="depth1">
+                예방·관리
+                <b class="underline"></b>
+              </a>
+              <ol class="depth2">
+                <li><a href="#">불소치료</a></li>
+                <li><a href="#">전기분해 <br>불소치료</a></li>
+                <li><a href="#">잇몸관리</a></li>
+                <li><a href="#">사랑니</a></li>
+              </ol>
+            </li>
+            <li><a href="#" class="depth1">
+                병원안내
+                <b class="underline"></b>
+              </a>
+            </li>
+            <li><a href="#" class="depth1">
+                병원소개
+                <b class="underline"></b>
+              </a>
+              <ol class="depth2">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">온라인 상담</a></li>
+                <li><a href="#">진료시간</a></li>
+                <li><a href="#">오시는 길</a></li>
+              </ol>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="util"><img src="img/icon_location_w.svg" alt="위치"> 부산 북구 금곡대로303번길2, 시티타워 5층</div>
+
+        <button class="btn_ham"><img src="img/icon_ham_w.svg" alt="전체메뉴"></button>
+      </div><!--end of .inner-->
+
+      <div class="mgnb_wrap">
+        <div class="mheader">
+          <div class="mheader_logo">
+            <a href="index.html"><img src="img/logo_w.png" alt="사과나무치과병원"></a>
+          </div>
+          <button class="btn_close"><img src="img/icon_close_w.svg" alt="닫기"></button>
+        </div><!--end of .mheader-->
+
+        <div class="mgnb_area">
+          <ul class="mgnb">
+            <li>
+              <div class="mdepth1">
+                <a href="#">
+                  치과상담<i class="bi bi-chevron-up slide_down"></i>
+                </a>
+                <!--.mdepth2-->
+                <ul class="mdepth2">
+                  <li><a href="#">치아</a></li>
+                  <li><a href="#">잇몸</a></li>
+                  <li><a href="#">턱관절</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="mdepth1">
+                <a href="#">
+                  치과진료<i class="bi bi-chevron-up slide_down"></i>
+                </a>
+                <!--.mdepth2-->
+                <ul class="mdepth2">
+                  <li><a href="#">임플란트</a></li>
+                  <li><a href="#">교정</a></li>
+                  <li><a href="#">심미치료</a></li>
+                  <li><a href="#">교정치료</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="mdepth1">
+                <a href="#">
+                  예방·관리<i class="bi bi-chevron-up slide_down"></i>
+                </a>
+                <!--.mdepth2-->
+                <ul class="mdepth2">
+                  <li><a href="#">불소치료</a></li>
+                  <li><a href="#">전기분해 불소치료</a></li>
+                  <li><a href="#">잇몸관리</a></li>
+                  <li><a href="#">사랑니</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="mdepth1">
+                <a href="#">
+                  병원안내<i class="bi bi-chevron-up slide_down"></i>
+                </a>
+                <!--.mdepth2-->
+                <ul class="mdepth2">
+                  <li><a href="#">병원안내</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="mdepth1">
+                <a href="#">
+                  병원소개<i class="bi bi-chevron-up slide_down"></i>
+                </a>
+                <!--.mdepth2-->
+                <ul class="mdepth2">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">온라인 상담</a></li>
+                  <li><a href="#">진료시간</a></li>
+                  <li><a href="#">오시는 길</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div><!--end of .mgnb_wrap-->
+    </header>
+
+    <main id="main" class="main">
+
+      <!--#banner-->
+      <section id="banner" class="banner">
+
+        <!--swiper-->
+        <div class="swiper slide_banner">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide banner01">
+              <div class="inner">
+                <div class="txt_box">
+                  <p>사과나무치과병원</p>
+                  <h2>건강한 미소를 심고, 평생을 함께하는 치과병원</h2>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide banner02">
+              <div class="inner">
+                <div class="txt_box">
+                  <p>23년의 신뢰</p>
+                  <h2>사과나무 치과병원이 이렇게 약속합니다</h2>
+                  <a href="#" class="btn_see">자세히 보기</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div><!--end of .swiper-->
+
+      </section>
+
+      <section id="service" class="service">
+        <div class="inner">
+          <div class="tit">
+            <p>SERVICE</p>
+            <h3>사과나무치과병원에서 제공하는 <br>치과 치료 서비스입니다</h3>
+          </div><!--end of .tit-->
+
+          <ul class="service_list">
+            <li class="card01">
+              <p>진료 상담</p>
+              <span>환자의 다양한 증상에 맞춰<br>전문의가 알맞은 치료 방법을 제시합니다</span>
+              <a href="#" class="btn_more">자세히 보기</a>
+            </li>
+            <li class="card02">
+              <p>치과 진료</p>
+              <span>풍부한 시술 경험을 바탕으로<br>전문의가 맞춤형 치과 진료를 실시합니다</span>
+              <a href="#" class="btn_more">자세히 보기</a>
+            </li>
+            <li class="card03">
+              <p>예방·관리</p>
+              <span>건강한 구강 상태 유지를 위해<br>다양한 질환을 사전에 차단하고자 노력합니다.</span>
+              <a href="#" class="btn_more">자세히 보기</a>
+            </li>
+          </ul>
+        </div><!--end of .inner-->
+      </section>
+
+      <section id="vision" class="vision">
+        <div class="inner">
+          <div class="trust">
+            <span>23년의 신뢰</span>
+            <p>사과나무를 심고 가꾸는 마음으로</p>
+            <p>정성을 다하겠습니다</p>
+          </div><!--end of .trust-->
+        </div><!--end of .inner-->
+
+        <ul class="vision_list">
+          <li class="list01">
+            <div class="txt_box">
+              <b>VISION 01</b>
+              <h4>정직한 진료, 신뢰받는 병원</h4>
+              <p>과잉진료 없는 진정성 있는 의료서비스 제공<br>환자의 입장에서 생각하는 소통 중심 치과</p>
+            </div>
+            <div class="img_box"></div>
+          </li>
+
+          <li class="list02">
+            <div class="img_box"></div>
+            <div class="txt_box">
+              <b>VISION 02</b>
+              <h4>평생 구강 건강관리의 동반자</h4>
+              <p>예방 중심 진료 및 맞춤형 관리 프로그램 운영<br>전 연령층의 구강건강 수명 연장 목표</p>
+            </div>
+          </li>
+
+          <li class="list03">
+            <div class="txt_box">
+              <b>VISION 03</b>
+              <h4>최신 기술과 따뜻한 마음의 조화</h4>
+              <p>디지털 진단 및 첨단 치료기술 도입<br>환자의 두려움을 덜어주는 친절하고 편안한 진료환경</p>
+            </div>
+            <div class="img_box"></div>
+          </li>
+
+          <li class="list04">
+            <div class="img_box"></div>
+            <div class="txt_box">
+              <b>VISION 04</b>
+              <h4>지역사회와 함께 성장하는 치과</h4>
+              <p>지역 주민의 건강을 위한 사회공헌 활동<br>지역을 대표하는 신뢰받는 의료기관</p>
+            </div>
+          </li>
+        </ul>
+
+      </section>
+
+      <section id="notice" class="notice">
+        <div class="inner">
+          <div class="tit">
+            <p>NOTICE</p>
+            <h3>사과나무치과병원의 <br>다양한 소식을 만나보세요!</h3>
+          </div><!--end of .tit-->
+
+          <div class="top">
+            <ul class="btn_list">
+              <li class="active">공지사항</li>
+              <li>온라인 상담</li>
+            </ul>
+            <a href="#" class="btn_add">더보기 <img src="img/icon_add_gray.png" alt="더보기"></a>
+          </div><!--end of .top-->
+
+          <div class="btm">
+            <ul class="notice_list">
+              <li>
+                <ol class="list01">
+                  <li>
+                    <span class="tag">공지사항</span>
+                    <a href="#" class="txt_box">
+                      <p>사과나무 홈페이지가 새롭게 태어났어요!</p>
+                      <b>2025.05.18</b>
+                    </a>
+                  </li>
+
+                  <li>
+                    <span class="tag">공지사항</span>
+                    <a href="#" class="txt_box">
+                      <p>2024 SUMMER 치아 교정 EVENT!</p>
+                      <b>2024.07.17</b>
+                    </a>
+                  </li>
+
+                  <li>
+                    <span class="tag">공지사항</span>
+                    <a href="#" class="txt_box">
+                      <p>2024 가정의 달 EVENT!</p>
+                      <b>2024.04.26</b>
+                    </a>
+                  </li>
+
+                </ol>
+              </li>
+
+              <li>
+                <ol class="list02">
+                  <li>
+                    <span class="tag">FAQ</span>
+                    <a href="#" class="txt_box">
+                      <p><img src="img/icon_lock.svg" alt="비밀게시글"> 김*형님의 상담 문의글입니다.</p>
+                      <b>2025.05.18</b>
+                    </a>
+                  </li>
+
+                  <li>
+                    <span class="tag">FAQ</span>
+                    <a href="#" class="txt_box">
+                      <p><img src="img/icon_lock.svg" alt="비밀게시글"> 박*형님의 상담 문의글입니다.</p>
+                      <b>2024.07.17</b>
+                    </a>
+                  </li>
+
+                  <li>
+                    <span class="tag">FAQ</span>
+                    <a href="#" class="txt_box">
+                      <p><img src="img/icon_lock.svg" alt="비밀게시글"> 이*형님의 상담 문의글입니다.</p>
+                      <b>2024.04.26</b>
+                    </a>
+                  </li>
+
+                </ol>
+              </li>
+            </ul>
+
+          </div><!--end of .btm-->
+
+        </div><!--end of .inner-->
+      </section>
+
+      <section id="info" class="info">
+        <div class="inner">
+          <div class="list01">
+            <h5 class="info_tit">오시는 길</h5>
+            <div class="txt_box">
+              <p>부산 북구 금곡대로303번길2, 시티타워 5층</p>
+              <span>부산 2호선 화명역 3번 출구 바로 앞</span>
+            </div><!--end of .txt_box-->
+          </div><!--end of .list01-->
+
+          <div class="list02">
+            <h5 class="info_tit">진료시간</h5>
+            <ul class="txt_box">
+              <li>
+                <p class="day">월 - 금</p>
+                <p class="time">10:00 - 21:00 <span>(금요일 야간은 교정진료만 실시)</span></p>
+              </li>
+              <li>
+                <p class="day">토요일</p>
+                <p class="time">10:00 - 14:00 <span>(점심시간 없이 연속진료 실시)</span></p>
+              </li>
+              <li>
+                <p class="day">점심시간</p>
+                <p class="time">12:30 - 14:00</p>
+              </li>
+              <li>
+                <p class="day">휴진안내</p>
+                <p class="time">일요일 및 공휴일 휴진</p>
+              </li>
+            </ul>
+          </div><!--end of .list02-->
+
+          <div class="list03">
+            <h5 class="info_tit">전화 상담 및 예약</h5>
+            <b class="tel">051 - 362 - 2804</b>
+          </div>
+
+        </div><!--end of .inner-->
+
+        <div id="map" class="map"></div>
+      </section>
+
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="inner">
+        <div class="f_top">
+          <div class="f_logo"><img src="img/logo_w.png" alt="사과나무치과병원"></div>
+          <div class="txt_box">
+            <p>전화 상담 및 예약</p>
+            <b>051 - 362 - 2804</b>
+          </div>
+        </div><!--end of .f_top-->
+
+        <div class="line"></div>
+
+        <div class="f_btm">
+          <div class="left">
+            <ul class="f_menu">
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">개인정보보호정책</a></li>
+              <li><a href="#">이메일무단수집거부</a></li>
+              <li><a href="#">비급여안내</a></li>
+            </ul>
+
+            <ol class="txt_list">
+              <li>사과나무치과병원</li>
+              <li class="default">부산 북구 금곡대로303번길2, 시티타워 5층 사업자등록번호 : 606-37-92982 대표 : 권오영, 문기호</li>
+              <li class="default">COPYRIGHTⓒ 2025 APPLETREE DENTIST. ALL RIGHTS RESERVED.</li>
+              <li>* 본 사이트는 상업적 목적이 아닌 포트폴리오용으로 제작되었으며, 사용된 일부 이미지 및 폰트는 별도의 출처가 있음을 밝힙니다.</li>
+              <li>
+                <ol class="link_list">
+                  <li>
+                    <a href="https://xn--vb0ba58yo4o6tgd7v.com/" title="원본 웹사이트 확인하기" target="_blank"><img
+                        src="img/icon_internet_w.svg" alt="원본 웹사이트"> 웹사이트</a>
+                  </li>
+                  <li>
+                    <a href="#" title="노트폴리오 확인하기" target="_blank"><img src="img/icon_notefolio_w.svg" alt="노트폴리오">
+                      노트폴리오</a>
+                  </li>
+                  <li>
+                    <a href="#" title="깃허브 확인하기" target="_blank"><img src="img/icon_github_w.svg" alt="깃허브"> 깃허브</a>
+                  </li>
+                </ol><!--end of .link_list-->
+              </li>
+            </ol>
+          </div>
+
+          <ul class="right">
+            <li><a href="https://www.instagram.com/appletreebusan_/" target="_blank"><img src="img/icon_sns01.svg"
+                  alt="인스타그램"></a></li>
+            <li><a href="https://blog.naver.com/ssohee69" target="_blank"><img src="img/icon_sns02.svg"
+                  alt="네이버 블로그"></a></li>
+            <li><a href="https://www.facebook.com/appletree2804" target="_blank"><img src="img/icon_sns03.svg"
+                  alt="페이스북"></a></li>
+            <li><a
+                href="https://www.youtube.com/@%EB%B6%80%EC%82%B0%EC%82%AC%EA%B3%BC%EB%82%98%EB%AC%B4%EC%B9%98%EA%B3%BC%EB%B3%91%EC%9B%90"
+                target="_blank"><img src="img/icon_sns04.svg" alt="유튜브"></a></li>
+          </ul>
+        </div>
+
+      </div><!--end of .inner-->
+    </footer>
+
+  </div><!--end of #wrap-->
+
+  <button class="gotop"></button>
+
+</body>
+
+</html>
